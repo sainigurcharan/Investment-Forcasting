@@ -1,0 +1,4 @@
+Index,Very_Conservative,Conservative,Moderate,Aggressive,Very_Aggressive
+mean,0.045954305,0.059601731,0.073249158,0.107604994,0.13
+std,0.027694641,0.041567596,0.060015219,0.079930454,0.100444104
+max,0,0.05,0.1,0.15,0.2
