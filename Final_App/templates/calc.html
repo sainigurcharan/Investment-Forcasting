@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Investment Forcasting</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+    <style>
+    input:invalid {
+        border: thin solid red;
+    }
+    input:valid {
+        border: thin solid green;
+    }
+</style>
+
+</head>
+
+<body>
+<form name="investment-db" method="POST" action="/" class="form-horizontal">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="/" class="scrollto">InvestOwiz</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li  class="menu-active"><a href="#portfolio">Model</a></li>
+          <li><a href="#services">Calculator</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main">
+
+    <!--==========================
+      Models Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Models</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app">RF-GridSearch</li>
+              <li data-filter=".filter-card">RF-Classifier</li>
+              <li data-filter=".filter-web">Logistic Regression</li>
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/RFGS1.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/RFGS1.jpg" data-lightbox="portfolio" data-title="RGFS-FWD 12 M return >8%" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">RFGS 12 M return >8%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/RFGS2.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/RFGS2.jpg" class="link-preview" data-lightbox="portfolio" data-title="LR-FWD 12 M return >8%" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">RFGS 12 M return <0%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/RFC1.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/RFC1.jpg" class="link-preview" data-lightbox="portfolio" data-title="RGFS-FWD 12 M return <0%" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">RFC 12 M return >8%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/RFC2.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/RFC2.jpg" class="link-preview" data-lightbox="portfolio" data-title="RFC-FWD 12 M return >8%" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">RFC 12 M return <0%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/LR1.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/LR1.jpg" class="link-preview" data-lightbox="portfolio" data-title="LR-FWD 12 M return <0%" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">LR 12 M return >8%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./static/img/portfolio/LR2.jpg" class="img-fluid" alt="">
+                <a href="./static/img/portfolio/LR2.jpg" class="link-preview" data-lightbox="portfolio" data-title="RFC-FWD 12 M return <0%" title="Preview"><i class="ion ion-eye"></i></a>
+                
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">LR 12 M return <0%</a></h4>
+                <p>Current Probability -</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+<!--==========================
+  Calculator
+============================-->
+<section id="services">
+  <div class="container">
+
+    <header class="section-header">
+      <h3 class="section-title">Calculator</h3>
+    </header>
+
+    <div class="row">
+        <div class="col-lg-3">
+              <div class="card mb-3">
+                <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                  <i class="ion-ios-speedometer-outline"></i>
+                    <b>Check Your Investment Horizon</b>
+                  <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
+                </div>
+                <div id="sample-metadata" class="card-body">
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><b>Current Portfolio Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+                    </div>
+                    <input type="text" id="presentValue" value="100000" required pattern= "\d+(\.\d{1,2})?" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><b>Annual Contribution Value&nbsp;&nbsp;</b></span>
+                    </div>
+                    <input type="text" id="investmentValue" value="5000" required pattern= "\d+(\.\d{1,2})?" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><b>Years of Investment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+                    </div>
+                    <input type="text" id="horizon" value="15" required pattern= "\b([1-9]|[0-9][0-9])\b" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                 <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <b>Forecast</b>
+                            </span>
+                        </div>
+                        <select id="regModel" class="browser-default custom-select">
+                            <option value="Strong" text="Strong" selected>Strong</option>
+                            <option value="Normal" text="Normal">Normal</option>
+                            <option value="Weak" text="Weak">Weak</option>
+                        </select>
+                    </div>
+                  <button type="button" class="btn btn-secondary btn-lg btn-block" style="color: #ffffff;background-color: #18d26e;" onclick="updatePortfolio()">Update</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="card mb-3">
+                <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                  <i class="ion-ios-list-outline"></i>&nbsp;<b>Ending Portfolio Balance</b>
+                </div>
+                <div class="card-body">
+                  <div id="ChartA" width="100%" height="30"></div>
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="row">
+                <div class="col-lg-8">
+                  <div class="card mb-3">
+                    <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                      <i class="ion-ios-list-outline"></i><b>&nbsp;<span id="ChartBLabel"></span>
+                        Profile
+                        </b>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><b>Select Portfolio Type</b></span>
+                            </div>
+                            <select id="portfolioType" class="browser-default custom-select" onchange="optionChanged()">
+                                <option value="Very_Conservative" text="Very Conservative" selected>Very Conservative</option>
+                                <option value="Conservative" text="Conservative">Conservative</option>
+                                <option value="Moderate" text="Moderate">Moderate</option>
+                                <option value="Aggressive" text="Aggresive">Aggressive</option>
+                                <option value="Very_Aggressive" text="Very Aggressive">Very Aggressive</option>
+                            </select>
+                        </div>
+                      <div id="ChartB" width="100%" height="30"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card mb-3">
+                    <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                      <i class="ion-ios-list-outline"></i>&nbsp;<b>Monte Carlo Simulation Histogram</b>
+                    </div>
+                    <div class="card-body">
+                      <div id="ChartC" width="100%" height="30"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                  <div class="card mb-3">
+                    <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                      <i class="ion-ios-speedometer-outline"></i>
+                        <b>Calculate Probability of Success</b>
+                    </div>
+                    <div id="sample-metadata" class="card-body">
+                      <div class="input-group input-group-sm mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><b>Desired Ending Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+                        </div>
+                        <input type="text" id="probOfSuccess" value="0" required pattern= "\d+(\.\d{1,2})?" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                      <button type="button" class="btn btn-secondary btn-lg btn-block" style="color: #ffffff;background-color: #18d26e;" onclick="endingAmount()">Calculate</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="card mb-3">
+                    <div class="card-header" style="color: #ffffff;background-color: #18d26e;">
+                      <i class="ion-ios-list-outline"></i>&nbsp;<b>Probability of Success (Depends on Investment & Portfolio Type)</b>
+                    </div>
+                    <div class="card-body">
+                        <div id="probOfSuccessLabel" style="font-size:40px"></div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+  </div>
+</section><!-- #services -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/lib/easing/easing.min.js"></script>
+  <script src="../static/lib/superfish/hoverIntent.js"></script>
+  <script src="../static/lib/superfish/superfish.min.js"></script>
+  <script src="../static/lib/wow/wow.min.js"></script>
+  <script src="../static/lib/waypoints/waypoints.min.js"></script>
+  <script src="../static/lib/counterup/counterup.min.js"></script>
+  <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="../static/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../static/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../static/js/main.js"></script>
+
+    <!-- Plot scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Main Logic Javascript File -->
+    <script src="./static/js/app.js"></script>
+
+
+
+</form>
+</body>
+</html>
