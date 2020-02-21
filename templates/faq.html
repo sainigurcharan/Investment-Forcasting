@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- HTML Meta Tags -->
+    <title>Algorithms Based Asset Allocation</title>
+    <meta name="description" content="We are empowering individual investors by providing them with the knowledge required to manage their portfolios on their own. We DO NOT believe that we can pick tops or bottoms, however, we do believe that data analytics and algorithms provide us with the odds to help us identify when to be more defensive and when to be more aggressive.">
+    <meta name="keywords" content="Investment, Forcasting, Machine Learning, Probability, Statistic, Investment Management, Portfolio Management, Market, Market Analysis, Market Predictions, Artificial Intelligence">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Algorithms Based Asset Allocation">
+    <meta itemprop="description" content="We are empowering individual investors by providing them with the knowledge required to manage their portfolios on their own. We DO NOT believe that we can pick tops or bottoms, however, we do believe that data analytics and algorithms provide us with the odds to help us identify when to be more defensive and when to be more aggressive.">
+    <meta itemprop="image" content="https://gsingh-aws-uci.s3-us-west-1.amazonaws.com/metaimga.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://mapmyportfolio.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Algorithms Based Asset Allocation">
+    <meta property="og:description" content="We are empowering individual investors by providing them with the knowledge required to manage their portfolios on their own. We DO NOT believe that we can pick tops or bottoms, however, we do believe that data analytics and algorithms provide us with the odds to help us identify when to be more defensive and when to be more aggressive.">
+    <meta property="og:image" content="https://gsingh-aws-uci.s3-us-west-1.amazonaws.com/metaimga.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithms Based Asset Allocation">
+    <meta name="twitter:description" content="We are empowering individual investors by providing them with the knowledge required to manage their portfolios on their own. We DO NOT believe that we can pick tops or bottoms, however, we do believe that data analytics and algorithms provide us with the odds to help us identify when to be more defensive and when to be more aggressive.">
+    <meta name="twitter:image" content="https://gsingh-aws-uci.s3-us-west-1.amazonaws.com/metaimga.jpg">
+    <!-- Meta Tags -->
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+    <style>
+    input:invalid {
+        border: thin solid red;
+    }
+    input:valid {
+        border: thin solid green;
+    }
+</style>
+
+</head>
+
+<body>
+<form name="investment-db" method="POST" action="/" class="form-horizontal">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="/" class="scrollto">Map My Portfolio</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+    </div>
+  </header><!-- #header -->
+
+  <main id="main">
+
+    <!--==========================
+      Models Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">FAQ</h3>
+        </header>
+
+          <div class="col-md-12">
+              <h2><b>Our Beginning</b></h2>
+              <p>MapMyPortfolio was founded to help individual investors manage their own money. We believe that the current wealth management industry is flawed as most of the industry is more interested in increasing their AUM and charging fees than focusing on growth and capital preservation for the clients.</p>
+              <p>Our goal is to educate and assist individual investors so that they can manage their portfolios on their own and NOT have to pay asset-based fees for sub-par performance. These fees add up over-time. If you have $1million portfolio and you get about 7% return a year and pay 0.7% in fees, you will be paying over $200,000 in 20 years.</p>
+              <h2><b>Our Process</b></h2>
+              <p>We start by identifying the individual’s current investments, future contributions andtime horizon to determine the best asset allocation. In addition to that we use our algorithms to determine future expectation and adjust the allocation accordingly.</p>
+              <p>We used 2 asset classes to build the model S&P500 and Total Bond Index. For majority of people these two classes provide necessary diversification and growth. Adding different but more equity funds do not help with the diversification as they are highly correlated with S&P 500.</p>
+              <p>The weights for 5 portfolios are as follow:</p>
+              <ul>
+                  <li>
+                      Very Conservative: 20% stocks – 80% Bonds
+                  </li>
+                  <li>
+                      Conservative: 40% stocks – 60% Bonds
+                  </li>
+                  <li>
+                      Moderate: 60% stocks – 40% Bonds
+                  </li>
+                  <li>
+                      Aggressive: 80% stocks – 20% Bonds
+                  </li>
+                  <li>
+                      Very Aggressive: 100% stocks
+                  </li>
+              </ul>
+              <p>How to use the model and calculator? There are 2 ways to do it. You want to select the scenario where the least-likely value is the highest.</p>
+              <ul>
+                  <li>
+                        Preferred Method: Start by finding the best asset allocation based on your input and “Normal” market condition. This is your default allocation. When the probability of market going down is high, move 1 level down and when the probability of market going up is high move 1 level up.
+                      <p>For example: If your default portfolio is Moderate (60/40), when the probability of going down increases you move to Conservative (60/40) and when the probability of going up increases you move it to Aggressive (80/20).When there are conflicting signals then you just stay in your default portfolio.</p>
+                  </li>
+                  <li>
+                      The second way is to select the forecast from the drop-down and let the model show the values.
+                  </li>
+              </ul>
+
+          </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/lib/easing/easing.min.js"></script>
+  <script src="../static/lib/superfish/hoverIntent.js"></script>
+  <script src="../static/lib/superfish/superfish.min.js"></script>
+  <script src="../static/lib/wow/wow.min.js"></script>
+  <script src="../static/lib/waypoints/waypoints.min.js"></script>
+  <script src="../static/lib/counterup/counterup.min.js"></script>
+  <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="../static/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../static/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../static/js/main.js"></script>
+
+    <!-- Plot scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Main Logic Javascript File -->
+    <script src="./static/js/app.js"></script>
+
+
+
+</form>
+</body>
+</html>

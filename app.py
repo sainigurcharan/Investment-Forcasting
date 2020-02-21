@@ -17,6 +17,11 @@ def calc():
 
     return render_template("calc.html")
 
+@app.route("/faq")
+def faq():
+
+    return render_template("faq.html")
+
 @app.route("/portfolio")
 def portfolio():
     presentValue = request.args.get('pv')

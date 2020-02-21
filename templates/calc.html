@@ -77,12 +77,67 @@
           <li><a href="/">Home</a></li>
           <li  class="menu-active"><a href="#portfolio">Model</a></li>
           <li><a href="#services">Calculator</a></li>
+            <li><a href="" data-toggle="modal" data-target="#exampleModalCenter">FAQ</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
   <main id="main">
+
+      <!-- ========================================
+      FAQ
+      ========================================== -->
+      <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">FAQ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2><b>Our Beginning</b></h2>
+                  <p>MapMyPortfolio was founded to help individual investors manage their own money. We believe that the current wealth management industry is flawed as most of the industry is more interested in increasing their AUM and charging fees than focusing on growth and capital preservation for the clients.</p>
+                  <p>Our goal is to educate and assist individual investors so that they can manage their portfolios on their own and NOT have to pay asset-based fees for sub-par performance. These fees add up over-time. If you have $1million portfolio and you get about 7% return a year and pay 0.7% in fees, you will be paying over $200,000 in 20 years.</p>
+                  <h2><b>Our Process</b></h2>
+                  <p>We start by identifying the individual’s current investments, future contributions andtime horizon to determine the best asset allocation. In addition to that we use our algorithms to determine future expectation and adjust the allocation accordingly.</p>
+                  <p>We used 2 asset classes to build the model S&P500 and Total Bond Index. For majority of people these two classes provide necessary diversification and growth. Adding different but more equity funds do not help with the diversification as they are highly correlated with S&P 500.</p>
+                  <p>The weights for 5 portfolios are as follow:</p>
+                  <ul>
+                      <li>
+                          Very Conservative: 20% stocks – 80% Bonds
+                      </li>
+                      <li>
+                          Conservative: 40% stocks – 60% Bonds
+                      </li>
+                      <li>
+                          Moderate: 60% stocks – 40% Bonds
+                      </li>
+                      <li>
+                          Aggressive: 80% stocks – 20% Bonds
+                      </li>
+                      <li>
+                          Very Aggressive: 100% stocks
+                      </li>
+                  </ul>
+                  <p>How to use the model and calculator? There are 2 ways to do it. You want to select the scenario where the least-likely value is the highest.</p>
+                  <ul>
+                      <li>
+                            Preferred Method: Start by finding the best asset allocation based on your input and “Normal” market condition. This is your default allocation. When the probability of market going down is high, move 1 level down and when the probability of market going up is high move 1 level up.
+                          <p>For example: If your default portfolio is Moderate (60/40), when the probability of going down increases you move to Conservative (60/40) and when the probability of going up increases you move it to Aggressive (80/20).When there are conflicting signals then you just stay in your default portfolio.</p>
+                      </li>
+                      <li>
+                          The second way is to select the forecast from the drop-down and let the model show the values.
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- FAQ -->
 
     <!--==========================
       Models Section
