@@ -12,7 +12,7 @@ Below is the final presentation done for this project during the UCI Data Analyt
 * Final Project V1.2 (PPT File)
 
 Below is the list of Folders and Files used for deployment on Heroku:
-* historicalSummary (CAV files for historical summary os stock indexes)
+* historicalSummary (CSV files for historical summary os stock indexes)
 * static (Folder for static files like js and css)
 * templates (Folder for html files)
 * Procfile (gunicorn server file version details for Heroku)
