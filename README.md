@@ -1,4 +1,4 @@
-# Investment-Forcasting
+# Investment Forcasting
 Follow the below link to experience the deployed website for this project:
 https://investowiz.herokuapp.com
 
