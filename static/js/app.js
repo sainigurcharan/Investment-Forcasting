@@ -6,6 +6,7 @@ updatePortfolio();
 function optionChanged() {
   updateEachPortfolio();
   histogram();
+  drawDown();
 }
 
 function updatePortfolio() {
@@ -67,6 +68,7 @@ function updatePortfolio() {
 
     updateEachPortfolio();
     histogram();
+    drawDown();
 }
 
 function histogram() {
@@ -99,8 +101,47 @@ function histogram() {
                 showline: true
             }
         };
+
         Plotly.newPlot('ChartC', dataHist, layoutC, {responsive: true});
-        Plotly.newPlot('ChartD', dataHist, layoutC, {responsive: true});
+    });
+}
+
+function drawDown() {
+    var pv = document.getElementById("presentValue").value;
+    var iv = document.getElementById("investmentValue").value;
+    var yr = document.getElementById("horizon").value;
+    var pf = document.getElementById("portfolioType").value;
+    var rm = document.getElementById("regModel").value;
+
+    var sampleData = "/drawDown?pv=" + pv + "&iv=" + iv + "&yr=" + yr + "&pf=" + pf + "&rm=" + rm;
+    histDD = [];
+    d3.json(sampleData).then((data) => {
+        for (let [key, value] of Object.entries(data)) {
+            tempValue = value;
+            //tempValue = tempValue.toFixed(2);
+            histDD.push(tempValue);
+        }
+        console.log(histDD);
+
+        var traceHistDD = {
+            x: histDD,
+            type: 'histogram',
+            marker: {
+                color: 'rgb(255,165,0)'
+            },
+            nbinsx: 40
+        };
+        var dataHistDD = [traceHistDD];
+        var layoutDD = {
+            bargap: 0.05,
+            bargroupgap: 0.2,
+            barmode: "overlay",
+            xaxis: {
+                showline: true
+            }
+        };
+
+        Plotly.newPlot('ChartD', dataHistDD, layoutDD, {responsive: true});
     });
 }
 
