@@ -55,7 +55,7 @@ function updatePortfolio() {
                 showline: true,
                 tickmode: "array",
                 tickvals: ['Very_Conservative', 'Conservative', 'Moderate', 'Aggressive', 'Very_Aggressive'],
-                ticktext: ['Very Conservative\n(20% SPY/80% BND)', 'Conservative\n(40% SPY/60% BND)', 'Moderate\n(60% SPY/40% BND)', 'Aggressive\n(80% SPY/20% BND)', 'Very Aggressive\n(100% SPY)']
+                ticktext: ['Very Conservative<br>(20% SPY/80% BND)', 'Conservative<br>(40% SPY/60% BND)', 'Moderate<br>(60% SPY/40% BND)', 'Aggressive<br>(80% SPY/20% BND)', 'Very Aggressive<br>(100% SPY)']
             },
             yaxis: {
                 showline: true
