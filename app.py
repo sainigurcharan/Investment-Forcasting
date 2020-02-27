@@ -181,7 +181,7 @@ def histogram():
         simH[x] = stream
 
     ending_values = simH.loc[time_horizon - 1]
-    prob_of_success = (len(ending_values[ending_values > 4000000]) / len(ending_values)) * 100
+    # prob_of_success = (len(ending_values[ending_values > 4000000]) / len(ending_values)) * 100
 
     return ending_values.to_json()
 

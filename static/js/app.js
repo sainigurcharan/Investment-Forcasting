@@ -1,5 +1,5 @@
-var ChartBLabel = d3.select("#ChartBLabel");
-ChartBLabel.html("- ");
+// var ChartBLabel = d3.select("#ChartBLabel");
+// ChartBLabel.html("- ");
 
 updatePortfolio();
 
@@ -52,12 +52,10 @@ function updatePortfolio() {
             bargroupgap: 0.1,
             barnorm: 'value',
             xaxis: {
+                showline: true,
                 tickmode: "array",
                 tickvals: ['Very_Conservative', 'Conservative', 'Moderate', 'Aggressive', 'Very_Aggressive'],
-                ticktext: ['Very Conservative', 'Conservative', 'Moderate', 'Aggressive', 'Very Aggressive']
-            },
-            xaxis: {
-                showline: true
+                ticktext: ['Very Conservative\n(20% SPY/80% BND)', 'Conservative\n(40% SPY/60% BND)', 'Moderate\n(60% SPY/40% BND)', 'Aggressive\n(80% SPY/20% BND)', 'Very Aggressive\n(100% SPY)']
             },
             yaxis: {
                 showline: true
@@ -102,6 +100,7 @@ function histogram() {
             }
         };
         Plotly.newPlot('ChartC', dataHist, layoutC, {responsive: true});
+        Plotly.newPlot('ChartD', dataHist, layoutC, {responsive: true});
     });
 }
 
@@ -127,13 +126,13 @@ function updateEachPortfolio() {
     var pf = document.getElementById("portfolioType").value;
     var rm = document.getElementById("regModel").value;
 
-    if (document.getElementById("portfolioType").value === "Very_Conservative") {
-        ChartBLabel.html("Very Conservative");
-    } else if (document.getElementById("portfolioType").value === "Very_Aggressive") {
-        ChartBLabel.html("Very Aggressive");
-    } else {
-        ChartBLabel.html(document.getElementById("portfolioType").value);
-    }
+    // if (document.getElementById("portfolioType").value === "Very_Conservative") {
+    //     ChartBLabel.html("Very Conservative");
+    // } else if (document.getElementById("portfolioType").value === "Very_Aggressive") {
+    //     ChartBLabel.html("Very Aggressive");
+    // } else {
+    //     ChartBLabel.html(document.getElementById("portfolioType").value);
+    // }
 
     var sampleData = "/eachPortfolio?pv=" + pv + "&iv=" + iv + "&yr=" + yr + "&pf=" + pf + "&rm=" + rm;
     arrCnt = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
