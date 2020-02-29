@@ -77,7 +77,7 @@
           <li><a href="/">Home</a></li>
           <li  class="menu-active"><a href="#portfolio">Model</a></li>
           <li><a href="#services">Calculator</a></li>
-            <li><a href="" data-toggle="modal" data-target="#exampleModalCenter">FAQ</a></li>
+            <li><a href="" data-toggle="modal" data-target="#exampleModalCenter">Disclaimer</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -86,52 +86,31 @@
   <main id="main">
 
       <!-- ========================================
-      FAQ
+      DISCLAIMER
       ========================================== -->
       <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">FAQ</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Disclaimer</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <h2><b>Our Beginning</b></h2>
-                  <p>MapMyPortfolio was founded to help individual investors manage their own money. We believe that the current wealth management industry is flawed as most of the industry is more interested in increasing their AUM and charging fees than focusing on growth and capital preservation for the clients.</p>
-                  <p>Our goal is to educate and assist individual investors so that they can manage their portfolios on their own and NOT have to pay asset-based fees for sub-par performance. These fees add up over-time. If you have $1million portfolio and you get about 7% return a year and pay 0.7% in fees, you will be paying over $200,000 in 20 years.</p>
-                  <h2><b>Our Process</b></h2>
-                  <p>We start by identifying the individual’s current investments, future contributions andtime horizon to determine the best asset allocation. In addition to that we use our algorithms to determine future expectation and adjust the allocation accordingly.</p>
-                  <p>We used 2 asset classes to build the model S&P500 and Total Bond Index. For majority of people these two classes provide necessary diversification and growth. Adding different but more equity funds do not help with the diversification as they are highly correlated with S&P 500.</p>
-                  <p>The weights for 5 portfolios are as follow:</p>
                   <ul>
-                      <li>
-                          Very Conservative: 20% stocks – 80% Bonds
-                      </li>
-                      <li>
-                          Conservative: 40% stocks – 60% Bonds
-                      </li>
-                      <li>
-                          Moderate: 60% stocks – 40% Bonds
-                      </li>
-                      <li>
-                          Aggressive: 80% stocks – 20% Bonds
-                      </li>
-                      <li>
-                          Very Aggressive: 100% stocks
-                      </li>
-                  </ul>
-                  <p>How to use the model and calculator? There are 2 ways to do it. You want to select the scenario where the least-likely value is the highest.</p>
-                  <ul>
-                      <li>
-                          <p>Preferred Method: Start by finding the best asset allocation based on your input and “Normal” market condition. This is your default allocation. When the probability of market going down is high, move 1 level down and when the probability of market going up is high move 1 level up.</p>
-                          <p>For example: If your default portfolio is Moderate (60/40), when the probability of going down increases you move to Conservative (40/60) and when the probability of going up increases you move it to Aggressive (80/20).When there are conflicting signals then you just stay in your default portfolio.</p>
-                      </li>
-                      <li>
-                          The second way is to select the forecast from the drop-down and let the model show the values.
-                      </li>
+                      <li>Past performance is no guarantee of future results, which may vary. This is for educational and entertainment only.</li>
+                      <li>Investing involves risk, including possible loss of principal. The value of the investments and the income derived from them may fluctuate over time.</li>
+                      <li>All portfolio returns presented are hypothetical and backtested. Hypothetical returns do not reflect trading costs, transaction fees, or taxes.</li>
+                      <li>The results are based on information from a variety of sources we consider reliable, but we do not represent that the information is accurate or complete.</li>
+                      <li>The results do not constitute investment advice or recommendation, are provided solely for informational purposes, and are not an offer to buy or sell any securities.</li>
+                      <li>The results are based on the total return of assets and assume that all received dividends and distributions are reinvested.</li>
+                      <li>CAGR = Compound Annual Growth Rate</li>
+                      <li>Stdev = Annualized standard deviation of monthly returns</li>
+                      <li>Stock market correlation is based on the correlation of monthly returns</li>
+                      <li>Drawdowns are calculated based on monthly returns excluding cashflows</li>
+                      <li>The backtested results assume annual rebalancing of portfolio assets to match the specified allocation</li>
                   </ul>
               </div>
             </div>
@@ -303,8 +282,8 @@
                             </span>
                         </div>
                         <select id="regModel" class="browser-default custom-select">
-                            <option value="Strong" text="Strong" selected>Strong</option>
-                            <option value="Normal" text="Normal">Normal</option>
+                            <option value="Strong" text="Strong">Strong</option>
+                            <option value="Normal" text="Normal"selected>Normal</option>
                             <option value="Weak" text="Weak">Weak</option>
                         </select>
                     </div>
